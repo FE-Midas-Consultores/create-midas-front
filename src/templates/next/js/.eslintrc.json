@@ -1,0 +1,101 @@
+{
+  "env": { "es2023": true, "browser": true, "node": true },
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "next",
+    "next/core-web-vitals",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": { "jsx": true }
+  },
+  "plugins": ["@stylistic", "check-file", "import", "unicorn"],
+  "reportUnusedDisableDirectives": true,
+  "rules": {
+    "eqeqeq": ["error", "always", { "null": "ignore" }],
+    "no-await-in-loop": "error",
+    "no-console": "error",
+    "no-else-return": "warn",
+    "no-implicit-coercion": "error",
+    "no-param-reassign": "error",
+    "no-return-await": "error",
+    "no-self-compare": "error",
+    "no-undef-init": "warn",
+    "no-unneeded-ternary": "error",
+    "no-var": "error",
+    "object-shorthand": "warn",
+    "prefer-const": "warn",
+    "prefer-object-spread": "warn",
+    "prefer-rest-params": "error",
+    "prefer-spread": "error",
+    "prefer-template": "warn",
+    "check-file/filename-naming-convention": [
+      "error",
+      { "**/*.{js,jsx,ts,tsx}": "KEBAB_CASE" },
+      { "ignoreMiddleExtensions": true }
+    ],
+    "check-file/folder-naming-convention": ["error", { "src/**/": "NEXT_JS_APP_ROUTER_CASE" }],
+    "import/first": "error",
+    "import/newline-after-import": "warn",
+    "import/no-cycle": "error",
+    "import/no-extraneous-dependencies": ["error", { "includeTypes": true }],
+    "import/no-mutable-exports": "error",
+    "import/no-self-import": "error",
+    "import/no-useless-path-segments": "error",
+    "import/order": [
+      "warn",
+      {
+        "alphabetize": { "order": "asc", "caseInsensitive": true },
+        "groups": ["type", "builtin", "external", "internal", "parent", "sibling", "index"],
+        "newlines-between": "always",
+        "pathGroups": [
+          {
+            "pattern": "{next,next/**,react,react-dom,react-dom/**}",
+            "group": "builtin",
+            "position": "before"
+          },
+          { "pattern": "@/**", "group": "internal", "position": "after" }
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin", "internal"],
+        "warnOnUnassignedImports": true
+      }
+    ],
+    "padding-line-between-statements": [
+      "warn",
+      { "blankLine": "always", "prev": "directive", "next": "*" },
+      { "blankLine": "always", "prev": "*", "next": "block-like" },
+      { "blankLine": "always", "prev": "block-like", "next": "*" },
+      { "blankLine": "always", "prev": "*", "next": "return" },
+      { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*" },
+      {
+        "blankLine": "any",
+        "prev": ["singleline-const", "singleline-let", "singleline-var"],
+        "next": ["singleline-const", "singleline-let", "singleline-var"]
+      }
+    ],
+    "react/function-component-definition": "warn",
+    "react/hook-use-state": "error",
+    "react/jsx-boolean-value": "warn",
+    "react/jsx-curly-brace-presence": "warn",
+    "react/jsx-fragments": "warn",
+    "react/jsx-no-leaked-render": "warn",
+    "react/jsx-no-target-blank": ["error", { "allowReferrer": true }],
+    "react/jsx-no-useless-fragment": ["warn", { "allowExpressions": true }],
+    "react/jsx-sort-props": ["warn", { "noSortAlphabetically": false }],
+    "react/no-array-index-key": "warn",
+    "react/no-unstable-nested-components": "error",
+    "react/prop-types": "off",
+    "react/self-closing-comp": "warn",
+    "unicorn/error-message": "error",
+    "unicorn/filename-case": ["error", { "case": "kebabCase" }],
+    "unicorn/no-empty-file": "error",
+    "unicorn/prefer-node-protocol": "warn"
+  },
+  "settings": { "react": { "version": "detect" } }
+}

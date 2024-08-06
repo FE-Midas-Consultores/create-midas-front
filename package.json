@@ -1,0 +1,58 @@
+{
+  "name": "create-midas-front",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "build/index.js",
+  "description": "Project initializer for React and Next.js apps.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Midas-Consultores/create-midas-front"
+  },
+  "keywords": [
+    "commitlint",
+    "eslint",
+    "husky",
+    "lint-staged",
+    "next",
+    "prettier",
+    "react",
+    "typescript"
+  ],
+  "license": "ISC",
+  "bin": {
+    "create-midas-front": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "pnpm link-cli && tsup --watch",
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "link-cli": "npm uninstall -g create-midas-front && npm link",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "19.3.0",
+    "@commitlint/config-conventional": "19.2.2",
+    "@stylistic/eslint-plugin": "2.6.1",
+    "@types/node": "22.1.0",
+    "@typescript-eslint/eslint-plugin": "8.0.0",
+    "@typescript-eslint/parser": "8.0.0",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-unicorn": "55.0.0",
+    "husky": "9.1.4",
+    "lint-staged": "15.2.8",
+    "prettier": "3.3.3",
+    "tsup": "8.2.4",
+    "typescript": "5.5.4"
+  },
+  "dependencies": {
+    "@clack/prompts": "0.7.0",
+    "@commander-js/extra-typings": "12.1.0",
+    "commander": "12.1.0",
+    "picocolors": "1.0.1"
+  }
+}

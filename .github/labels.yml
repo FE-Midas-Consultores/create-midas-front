@@ -1,0 +1,57 @@
+- name: 'autorelease: tagged'
+  description: Used by release-please to indicate a release has been tagged
+  color: EDEDED
+- name: 'autorelease: pending'
+  description: Used by release-please to indicate a release is pending
+  color: EDEDED
+- name: 💻 source
+  description: Indicates the scope is related to the own service logic
+  color: C5DEF5
+- name: 🧪 tests
+  description: Indicates the scope is related to the tests
+  color: 0E8A16
+- name: ⚙️ configuration
+  description: Indicates the scope is related to the configuration
+  color: 3D3F40
+- name: 🏭 build
+  description: Indicates the change is related to the build
+  color: 520B85
+- name: 🤖 ci/cd
+  description: Indicates the change is related to CI/CD workflows
+  color: E3AA5F
+- name: 🏠 github configuration
+  description: Indicates the change is related to github settings
+  color: 967a65
+- name: 🚀 feature
+  description: Feature added in the PR
+  color: 084475
+- name: 🐞 bug
+  description: Bug identified
+  color: 381203
+- name: 🩹 fix
+  description: Fix applied in the PR
+  color: F4D03F
+- name: ⚠️ breaking change
+  description: Breaking change in the PR
+  color: 734f02
+- name: 📦 dependencies
+  description: Pull requests that update a dependency file
+  color: A6480A
+- name: 📝 documentation
+  description: Improvements or additions to documentation
+  color: 228AFF
+- name: 🤩 size/xs
+  description: Pull request size XS
+  color: 27AE60
+- name: 🥳 size/s
+  description: Pull request size S
+  color: 2ECC71
+- name: 😎 size/m
+  description: Pull request size M
+  color: D6AE0D
+- name: 😖 size/l
+  description: Pull request size L
+  color: F39C12
+- name: 🤯 size/xl
+  description: Pull request size XL
+  color: E67E22
