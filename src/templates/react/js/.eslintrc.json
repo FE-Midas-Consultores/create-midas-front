@@ -73,9 +73,7 @@
         "next": ["singleline-const", "singleline-let", "singleline-var"]
       }
     ],
-    "unicorn/error-message": "error",
-    "unicorn/no-empty-file": "error",
-    "unicorn/prefer-node-protocol": "warn",
+    "react/function-component-definition": "warn",
     "react/hook-use-state": "error",
     "react/jsx-boolean-value": "warn",
     "react/jsx-curly-brace-presence": "warn",
@@ -86,8 +84,11 @@
     "react/jsx-sort-props": ["warn", { "noSortAlphabetically": false }],
     "react/no-array-index-key": "warn",
     "react/no-unstable-nested-components": "error",
+    "react/prop-types": "off",
     "react/self-closing-comp": "warn",
-    "react/function-component-definition": "warn"
+    "unicorn/error-message": "error",
+    "unicorn/no-empty-file": "error",
+    "unicorn/prefer-node-protocol": "warn"
   },
   "settings": { "react": { "version": "detect" } }
 }

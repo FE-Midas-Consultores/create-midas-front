@@ -93,7 +93,6 @@
     "react/prop-types": "off",
     "react/self-closing-comp": "warn",
     "unicorn/error-message": "error",
-    "unicorn/filename-case": ["error", { "case": "kebabCase" }],
     "unicorn/no-empty-file": "error",
     "unicorn/prefer-node-protocol": "warn"
   },
