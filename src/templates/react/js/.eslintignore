@@ -1,4 +1,5 @@
 *.config.*
+src/components/ui
 build
 coverage
 dist
