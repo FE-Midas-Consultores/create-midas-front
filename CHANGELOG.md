@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v1.1.0...v1.1.1) (2024-10-17)
+
+
+### 🐛 Bug Fixes
+
+* update templates ([#37](https://github.com/FE-Midas-Consultores/create-midas-front/issues/37)) ([fd90119](https://github.com/FE-Midas-Consultores/create-midas-front/commit/fd90119fd84a04b636378caa479f93243b014c94))
+
 ## [1.1.0](https://github.com/Midas-Consultores/create-midas-front/compare/v1.0.0...v1.1.0) (2024-09-05)
 
 
