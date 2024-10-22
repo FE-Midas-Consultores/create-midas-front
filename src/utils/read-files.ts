@@ -22,19 +22,21 @@ export function replaceFiles(projectName: string) {
 async function addProjectName(projectName: string, path: string) {
   const files = await readdir(path, { withFileTypes: true })
 
-  for await (const file of files) {
-    const filePath = join(file.parentPath, file.name)
+  await Promise.all(
+    files.map(async (file) => {
+      const filePath = join(path, file.name)
 
-    if (file.isDirectory()) {
-      await addProjectName(projectName, filePath)
-    } else {
-      const data = await readFile(filePath, 'utf8')
+      if (file.isDirectory()) {
+        await addProjectName(projectName, filePath)
+      } else {
+        const data = await readFile(filePath, 'utf8')
 
-      if (data.includes('{{ PROJECT_NAME }}')) {
-        const replacedFile = data.replace('{{ PROJECT_NAME }}', projectName)
+        if (data.includes('{{ PROJECT_NAME }}')) {
+          const replacedFile = data.replace('{{ PROJECT_NAME }}', projectName)
 
-        await writeFile(filePath, replacedFile, 'utf8')
+          await writeFile(filePath, replacedFile, 'utf8')
+        }
       }
-    }
-  }
+    }),
+  )
 }
