@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v1.1.2...v1.2.0) (2024-10-22)
+
+
+### ✨ New Features
+
+* add project initialization in current directory ([#81](https://github.com/FE-Midas-Consultores/create-midas-front/issues/81)) ([50864a5](https://github.com/FE-Midas-Consultores/create-midas-front/commit/50864a5220f1db012d79a345fec7525a17cfb3e8))
+
+
+### 🐛 Bug Fixes
+
+* bump vite from 5.3.5 to 5.3.6 in /src/templates/react/js ([#79](https://github.com/FE-Midas-Consultores/create-midas-front/issues/79)) ([7c163c1](https://github.com/FE-Midas-Consultores/create-midas-front/commit/7c163c158efdc5f63e237fd51ba91b3a4b7e79b2))
+
 ## [1.1.2](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v1.1.1...v1.1.2) (2024-10-22)
 
 
