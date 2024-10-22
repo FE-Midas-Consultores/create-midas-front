@@ -1,6 +1,6 @@
 {
   "name": "create-midas-front",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "type": "module",
   "main": "build/index.js",
   "description": "Project initializer for React and Next.js apps.",
