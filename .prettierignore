@@ -1,3 +1,5 @@
+.release-please-manifest.json
+CHANGELOG.md
 build
 bun.lockb
 dist
