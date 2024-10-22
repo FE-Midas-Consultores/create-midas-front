@@ -1,5 +1,5 @@
 import { readFile, readdir, writeFile } from 'node:fs/promises'
-import { join } from 'node:path'
+import { basename, join } from 'node:path'
 
 /**
  * Reads all files in a project directory and replaces the
@@ -10,7 +10,9 @@ import { join } from 'node:path'
 export function replaceFiles(projectName: string) {
   const projectPath = join(process.cwd(), projectName)
 
-  return addProjectName(projectName, projectPath)
+  const name = projectName === '.' ? basename(process.cwd()) : projectName
+
+  return addProjectName(name, projectPath)
 }
 
 /**

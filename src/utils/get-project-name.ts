@@ -15,6 +15,8 @@ export async function getProjectName() {
     await text({
       message: 'What is your project named?',
       validate: (value) => {
+        if (value === '.') return
+
         if (/^$|[^a-zA-Z0-9_-]/g.test(value)) {
           return 'Project name can only contain letters, numbers, hyphens, and underscores'
         }
