@@ -30,4 +30,6 @@ yarn create midas-front
 
 ## CLI Options
 
+You can initialize a project in your current directory by passing `.` as the project name.
+
 Use `-h` or `--help` to see all available options.
