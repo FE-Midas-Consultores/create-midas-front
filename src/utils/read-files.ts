@@ -1,4 +1,4 @@
-import { readFile, readdir, writeFile } from 'node:fs/promises'
+import { lstat, readFile, readdir, writeFile } from 'node:fs/promises'
 import { basename, join } from 'node:path'
 
 /**
@@ -24,21 +24,27 @@ export function replaceFiles(projectName: string) {
 async function addProjectName(projectName: string, path: string) {
   const files = await readdir(path, { withFileTypes: true })
 
-  await Promise.all(
-    files.map(async (file) => {
-      const filePath = join(path, file.name)
+  for (const file of files) {
+    const filePath = join(path, file.name)
 
-      if (file.isDirectory()) {
-        await addProjectName(projectName, filePath)
-      } else {
+    if (file.isDirectory() && file.name !== 'node_modules') {
+      // eslint-disable-next-line no-await-in-loop
+      await addProjectName(projectName, filePath)
+    } else {
+      // eslint-disable-next-line no-await-in-loop
+      const stats = await lstat(filePath)
+
+      if (stats.isFile()) {
+        // eslint-disable-next-line no-await-in-loop
         const data = await readFile(filePath, 'utf8')
 
         if (data.includes('{{ PROJECT_NAME }}')) {
           const replacedFile = data.replace('{{ PROJECT_NAME }}', projectName)
 
+          // eslint-disable-next-line no-await-in-loop
           await writeFile(filePath, replacedFile, 'utf8')
         }
       }
-    }),
-  )
+    }
+  }
 }
