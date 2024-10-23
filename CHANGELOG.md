@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v1.2.0...v1.2.1) (2024-10-23)
+
+
+### 🐛 Bug Fixes
+
+* replace `Promise.all` for `for of` loop ([#82](https://github.com/FE-Midas-Consultores/create-midas-front/issues/82)) ([41a4f1d](https://github.com/FE-Midas-Consultores/create-midas-front/commit/41a4f1dceb10cd07348ce2719178453925ea89e1))
+
 ## [1.2.0](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v1.1.2...v1.2.0) (2024-10-22)
 
 
