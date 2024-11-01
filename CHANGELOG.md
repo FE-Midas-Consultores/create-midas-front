@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.2](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v1.2.1...v1.2.2) (2024-11-01)
+
+
+### 🐛 Bug Fixes
+
+* bump @stylistic/eslint-plugin in /src/templates/next/js ([#85](https://github.com/FE-Midas-Consultores/create-midas-front/issues/85)) ([970b8e9](https://github.com/FE-Midas-Consultores/create-midas-front/commit/970b8e91d73ff414dc20c512e0d4f2d6581e15ea))
+* bump @stylistic/eslint-plugin in /src/templates/next/ts ([#89](https://github.com/FE-Midas-Consultores/create-midas-front/issues/89)) ([3cd7849](https://github.com/FE-Midas-Consultores/create-midas-front/commit/3cd78490b335944d9b326c8431bcfcf664cbe137))
+* bump @stylistic/eslint-plugin in /src/templates/react/js ([#94](https://github.com/FE-Midas-Consultores/create-midas-front/issues/94)) ([42bd8e7](https://github.com/FE-Midas-Consultores/create-midas-front/commit/42bd8e72df78bb0201e28f0b7e3360c7280413eb))
+* bump @stylistic/eslint-plugin in /src/templates/react/ts ([#97](https://github.com/FE-Midas-Consultores/create-midas-front/issues/97)) ([1e870a1](https://github.com/FE-Midas-Consultores/create-midas-front/commit/1e870a18a6b9fc13760bde6f4f22a84f8c5596f4))
+* bump eslint-config-next in /src/templates/next/js ([#86](https://github.com/FE-Midas-Consultores/create-midas-front/issues/86)) ([3fed21f](https://github.com/FE-Midas-Consultores/create-midas-front/commit/3fed21f35f9ef66372c66a5000818eeede4225b0))
+* bump eslint-config-next in /src/templates/next/ts ([#91](https://github.com/FE-Midas-Consultores/create-midas-front/issues/91)) ([ae2625a](https://github.com/FE-Midas-Consultores/create-midas-front/commit/ae2625a9a3b8f72ee4389803f471bb19aea7519d))
+
 ## [1.2.1](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v1.2.0...v1.2.1) (2024-10-23)
 
 
