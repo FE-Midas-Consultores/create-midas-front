@@ -30,6 +30,6 @@
     "eslint-plugin-unicorn": "56.0.1",
     "husky": "9.1.6",
     "lint-staged": "15.2.10",
-    "prettier": "3.3.3"
+    "prettier": "3.4.1"
   }
 }
