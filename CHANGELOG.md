@@ -1,5 +1,38 @@
 # Changelog
 
+## [1.2.3](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v1.2.2...v1.2.3) (2024-12-02)
+
+
+### 🐛 Bug Fixes
+
+* bump @commitlint/cli in /src/templates/next/js ([#128](https://github.com/FE-Midas-Consultores/create-midas-front/issues/128)) ([0eb2119](https://github.com/FE-Midas-Consultores/create-midas-front/commit/0eb21194d0e22c1a07ae4f4ed9bdc73dc2e43544))
+* bump @commitlint/cli in /src/templates/next/ts ([#132](https://github.com/FE-Midas-Consultores/create-midas-front/issues/132)) ([ef0a4d5](https://github.com/FE-Midas-Consultores/create-midas-front/commit/ef0a4d50d61772f29e148eec9557723939b5b466))
+* bump @commitlint/cli in /src/templates/react/js ([#135](https://github.com/FE-Midas-Consultores/create-midas-front/issues/135)) ([891f306](https://github.com/FE-Midas-Consultores/create-midas-front/commit/891f30690895334395c44e60fe57acfba4461a29))
+* bump @commitlint/cli in /src/templates/react/ts ([#138](https://github.com/FE-Midas-Consultores/create-midas-front/issues/138)) ([cde3a02](https://github.com/FE-Midas-Consultores/create-midas-front/commit/cde3a02ea44cf235dd0402748009f5ab26b878bc))
+* bump @commitlint/config-conventional in /src/templates/next/js ([#114](https://github.com/FE-Midas-Consultores/create-midas-front/issues/114)) ([553b4ff](https://github.com/FE-Midas-Consultores/create-midas-front/commit/553b4ffa56a01cd00cbbb80dbb242ea91686319c))
+* bump @commitlint/config-conventional in /src/templates/next/ts ([#140](https://github.com/FE-Midas-Consultores/create-midas-front/issues/140)) ([dbaebc8](https://github.com/FE-Midas-Consultores/create-midas-front/commit/dbaebc8fdd569c6f7b4fee31daf5290d3fd87306))
+* bump @commitlint/config-conventional in /src/templates/react/js ([#143](https://github.com/FE-Midas-Consultores/create-midas-front/issues/143)) ([0dc0300](https://github.com/FE-Midas-Consultores/create-midas-front/commit/0dc0300ad764f43124a4e8cbc3e44766bc8997cc))
+* bump @commitlint/config-conventional in /src/templates/react/ts ([#145](https://github.com/FE-Midas-Consultores/create-midas-front/issues/145)) ([ffb90be](https://github.com/FE-Midas-Consultores/create-midas-front/commit/ffb90be371b83c6dcd1db8a1e74caebc0f5a3f1b))
+* bump @stylistic/eslint-plugin in /src/templates/next/js ([#115](https://github.com/FE-Midas-Consultores/create-midas-front/issues/115)) ([8ce7b30](https://github.com/FE-Midas-Consultores/create-midas-front/commit/8ce7b30ae85aae0c2506ee28c51d94a7a0b251fa))
+* bump @stylistic/eslint-plugin in /src/templates/next/ts ([#120](https://github.com/FE-Midas-Consultores/create-midas-front/issues/120)) ([61ac3b9](https://github.com/FE-Midas-Consultores/create-midas-front/commit/61ac3b9efc3013e18f72284d73b1ea7822a41b58))
+* bump @stylistic/eslint-plugin in /src/templates/react/js ([#123](https://github.com/FE-Midas-Consultores/create-midas-front/issues/123)) ([1636607](https://github.com/FE-Midas-Consultores/create-midas-front/commit/163660781638dde9e7e1966eec1f7d6e3d6514a3))
+* bump @stylistic/eslint-plugin in /src/templates/react/ts ([#124](https://github.com/FE-Midas-Consultores/create-midas-front/issues/124)) ([4bc6f61](https://github.com/FE-Midas-Consultores/create-midas-front/commit/4bc6f61af2fc12052d7d91272bd5215c99cd6795))
+* bump @typescript-eslint/eslint-plugin in /src/templates/next/ts ([#130](https://github.com/FE-Midas-Consultores/create-midas-front/issues/130)) ([0e3ca48](https://github.com/FE-Midas-Consultores/create-midas-front/commit/0e3ca48266b4920ec5a2247812008786714464b2))
+* bump @typescript-eslint/parser in /src/templates/next/ts ([#131](https://github.com/FE-Midas-Consultores/create-midas-front/issues/131)) ([d85376b](https://github.com/FE-Midas-Consultores/create-midas-front/commit/d85376b95e2864e8f1440da39e3f86936318e2c7))
+* bump @typescript-eslint/parser in /src/templates/react/ts ([#137](https://github.com/FE-Midas-Consultores/create-midas-front/issues/137)) ([7d8d124](https://github.com/FE-Midas-Consultores/create-midas-front/commit/7d8d12467003f96ef780d51d47dfd41b333c16ac))
+* bump eslint-config-next in /src/templates/next/js ([#127](https://github.com/FE-Midas-Consultores/create-midas-front/issues/127)) ([3e2873a](https://github.com/FE-Midas-Consultores/create-midas-front/commit/3e2873ae2cea0907dd470a76dcd48ed0b9ec0ab2))
+* bump eslint-config-next in /src/templates/next/ts ([#119](https://github.com/FE-Midas-Consultores/create-midas-front/issues/119)) ([5a79d41](https://github.com/FE-Midas-Consultores/create-midas-front/commit/5a79d41bb9ebb73f4c47aaa47cc2dfb60b7ce95e))
+* bump eslint-plugin-unicorn in /src/templates/next/js ([#111](https://github.com/FE-Midas-Consultores/create-midas-front/issues/111)) ([d735a8a](https://github.com/FE-Midas-Consultores/create-midas-front/commit/d735a8a5e5a823c9e98dd24ab3cf1d20b5f27e5f))
+* bump husky from 9.1.6 to 9.1.7 in /src/templates/next/js ([#112](https://github.com/FE-Midas-Consultores/create-midas-front/issues/112)) ([6b1279c](https://github.com/FE-Midas-Consultores/create-midas-front/commit/6b1279ce6ceb208531d065a56e8bf0f05118b32f))
+* bump husky from 9.1.6 to 9.1.7 in /src/templates/next/ts ([#117](https://github.com/FE-Midas-Consultores/create-midas-front/issues/117)) ([a640717](https://github.com/FE-Midas-Consultores/create-midas-front/commit/a6407176f8789e3220e0032a526026c7e6ea6401))
+* bump husky from 9.1.6 to 9.1.7 in /src/templates/react/js ([#122](https://github.com/FE-Midas-Consultores/create-midas-front/issues/122)) ([b69c246](https://github.com/FE-Midas-Consultores/create-midas-front/commit/b69c246bee1769603b78f0d3f4c462dac8e59103))
+* bump husky from 9.1.6 to 9.1.7 in /src/templates/react/ts ([#126](https://github.com/FE-Midas-Consultores/create-midas-front/issues/126)) ([a0f8ee6](https://github.com/FE-Midas-Consultores/create-midas-front/commit/a0f8ee669f16b4800cc1c1c2d1af36406bc60314))
+* bump prettier from 3.3.3 to 3.4.1 in /src/templates/next/js ([#113](https://github.com/FE-Midas-Consultores/create-midas-front/issues/113)) ([1781170](https://github.com/FE-Midas-Consultores/create-midas-front/commit/178117058b02f2adde053c414b84e6972c8ed400))
+* bump prettier from 3.3.3 to 3.4.1 in /src/templates/next/ts ([#141](https://github.com/FE-Midas-Consultores/create-midas-front/issues/141)) ([5ffe7c4](https://github.com/FE-Midas-Consultores/create-midas-front/commit/5ffe7c4080afc423b0e0c7b308ec407556aef8fe))
+* bump prettier from 3.3.3 to 3.4.1 in /src/templates/react/js ([#142](https://github.com/FE-Midas-Consultores/create-midas-front/issues/142)) ([6b6abe5](https://github.com/FE-Midas-Consultores/create-midas-front/commit/6b6abe5da0f15d3d9e54ce48dbfc2632411081f0))
+* bump prettier from 3.3.3 to 3.4.1 in /src/templates/react/ts ([#144](https://github.com/FE-Midas-Consultores/create-midas-front/issues/144)) ([66ac8f2](https://github.com/FE-Midas-Consultores/create-midas-front/commit/66ac8f255b472d75026b7f78212300187a55dc1d))
+* bump typescript from 5.6.3 to 5.7.2 in /src/templates/next/ts ([#139](https://github.com/FE-Midas-Consultores/create-midas-front/issues/139)) ([71cd854](https://github.com/FE-Midas-Consultores/create-midas-front/commit/71cd8542678f88c1bb47e250b76453919e5d212a))
+
 ## [1.2.2](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v1.2.1...v1.2.2) (2024-11-01)
 
 
