@@ -12,11 +12,11 @@ importers:
         specifier: 0.8.2
         version: 0.8.2
       '@commander-js/extra-typings':
-        specifier: 13.1.0
-        version: 13.1.0(commander@13.1.0)
+        specifier: 12.1.0
+        version: 12.1.0(commander@12.1.0)
       commander:
-        specifier: 13.1.0
-        version: 13.1.0
+        specifier: 12.1.0
+        version: 12.1.0
       picocolors:
         specifier: 1.1.1
         version: 1.1.1
