@@ -1,7 +1,7 @@
 # Changelog
 
 ## [1.2.3](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v1.2.2...v1.2.3) (2025-05-05)
-
+### :rocket: Bump Next to v14.2.28
 
 ### 🐛 Bug Fixes
 
