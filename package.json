@@ -52,7 +52,7 @@
   "dependencies": {
     "@clack/prompts": "0.8.2",
     "@commander-js/extra-typings": "13.1.0",
-    "commander": "13.1.0",
+    "commander": "12.1.0",
     "picocolors": "1.1.1"
   }
 }
