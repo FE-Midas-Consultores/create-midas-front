@@ -33,12 +33,12 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@commitlint/cli": "19.6.1",
+    "@commitlint/cli": "19.7.1",
     "@commitlint/config-conventional": "19.6.0",
     "@stylistic/eslint-plugin": "2.12.1",
     "@types/node": "22.13.0",
     "@typescript-eslint/eslint-plugin": "8.25.0",
-    "@typescript-eslint/parser": "8.19.0",
+    "@typescript-eslint/parser": "8.25.0",
     "eslint": "8.57.1",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.31.0",
@@ -51,8 +51,8 @@
   },
   "dependencies": {
     "@clack/prompts": "0.8.2",
-    "@commander-js/extra-typings": "12.1.0",
-    "commander": "12.1.0",
+    "@commander-js/extra-typings": "13.1.0",
+    "commander": "13.1.0",
     "picocolors": "1.1.1"
   }
 }
