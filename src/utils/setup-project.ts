@@ -28,8 +28,6 @@ export async function setupProject(
   try {
     // check if git is already initialized
     await execCmd('git rev-parse --is-inside-work-tree', { cwd: projectPath })
-
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (_) {
     spinner.message('Initializing Git 🚀')
 
