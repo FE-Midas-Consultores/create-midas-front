@@ -1,7 +1,0 @@
-*.config.*
-build
-coverage
-dist
-dist
-node_modules
-src/templates/
