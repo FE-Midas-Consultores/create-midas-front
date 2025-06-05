@@ -1,7 +1,8 @@
-import { cp } from 'fs/promises'
-import { dirname, join } from 'path'
+import { cp } from 'node:fs/promises'
+import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
+
 import { defineConfig } from 'tsup'
-import { fileURLToPath } from 'url'
 
 export default defineConfig((options) => ({
   clean: true,
@@ -15,6 +16,12 @@ export default defineConfig((options) => ({
     await cp(
       join(dirname(fileURLToPath(import.meta.url)), 'src', 'templates'),
       join('build', 'templates'),
+      { recursive: true },
+    )
+
+    await cp(
+      join(dirname(fileURLToPath(import.meta.url)), 'src', 'dependencies'),
+      join('build', 'dependencies'),
       { recursive: true },
     )
   },
