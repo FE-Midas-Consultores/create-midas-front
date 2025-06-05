@@ -27,32 +27,34 @@
     "dev": "pnpm link-cli && tsup --watch",
     "format": "prettier . --check",
     "format:fix": "prettier . --write",
-    "link-cli": "npm uninstall -g create-midas-front && npm link",
+    "link-cli": "rimraf ./build && pnpm build && npm uninstall -g create-midas-front && npm link",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky"
   },
   "devDependencies": {
-    "@commitlint/cli": "19.7.1",
-    "@commitlint/config-conventional": "19.6.0",
-    "@stylistic/eslint-plugin": "2.12.1",
-    "@types/node": "22.13.0",
-    "@typescript-eslint/eslint-plugin": "8.25.0",
-    "@typescript-eslint/parser": "8.25.0",
-    "eslint": "8.57.1",
-    "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-import": "2.31.0",
-    "eslint-plugin-unicorn": "56.0.1",
+    "@clack/prompts": "0.11.0",
+    "@commitlint/cli": "19.8.1",
+    "@commitlint/config-conventional": "19.8.1",
+    "@eslint/js": "9.31.0",
+    "@stylistic/eslint-plugin": "5.2.1",
+    "@types/node": "24.1.0",
+    "@typescript-eslint/eslint-plugin": "8.38.0",
+    "@typescript-eslint/parser": "8.38.0",
+    "eslint": "9.31.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-check-file": "3.3.0",
+    "eslint-plugin-import": "2.32.0",
+    "eslint-plugin-unicorn": "60.0.0",
     "husky": "9.1.7",
-    "lint-staged": "15.4.3",
-    "prettier": "3.4.2",
-    "tsup": "8.3.5",
-    "typescript": "5.7.3"
+    "picocolors": "1.1.1",
+    "prettier": "3.6.2",
+    "tsup": "8.5.0",
+    "typescript": "5.8.3",
+    "typescript-eslint": "8.38.0"
   },
   "dependencies": {
-    "@clack/prompts": "0.8.2",
-    "@commander-js/extra-typings": "13.1.0",
-    "commander": "12.1.0",
-    "picocolors": "1.1.1"
+    "@commander-js/extra-typings": "14.0.0",
+    "commander": "14.0.0"
   }
 }
