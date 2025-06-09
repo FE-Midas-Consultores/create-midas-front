@@ -5,7 +5,7 @@ export default function App() {
 
   return (
     <>
-      <h1>Vite + React</h1>
+      <h1>{{ PROJECT_NAME }}</h1>
       <div>
         <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
         <p>
