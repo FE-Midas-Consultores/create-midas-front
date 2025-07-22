@@ -21,7 +21,7 @@ updates:
   # Template updates
   - package-ecosystem: 'npm'
     directories:
-      - '/src/templates/**/*'
+      - '/src/dependencies/**/*'
     commit-message:
       prefix: 'fix'
     labels:
