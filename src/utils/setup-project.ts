@@ -22,14 +22,13 @@ export async function setupProject(
   const spinner = createSpinner()
 
   spinner.start('Setting up project 🚧')
+  await sleep()
 
   await replaceFiles(projectName)
 
   try {
     // check if git is already initialized
     await execCmd('git rev-parse --is-inside-work-tree', { cwd: projectPath })
-
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (_) {
     spinner.message('Initializing Git 🚀')
 

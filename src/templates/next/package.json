@@ -1,0 +1,16 @@
+{
+  "name": "{{ PROJECT_NAME }}",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "prepare": "husky",
+    "start": "next start"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
