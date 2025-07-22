@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v2.0.0...v2.0.1) (2025-07-22)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update `pnpm-lock` ([#218](https://github.com/FE-Midas-Consultores/create-midas-front/issues/218)) ([64921d2](https://github.com/FE-Midas-Consultores/create-midas-front/commit/64921d2328a1c156b80df8b539deba535c431f20))
+
 ## [2.0.0](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v1.2.4...v2.0.0) (2025-07-22)
 
 
