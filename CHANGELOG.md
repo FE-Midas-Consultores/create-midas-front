@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.0.0](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v1.2.4...v2.0.0) (2025-07-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* update generator and cli ([#212](https://github.com/FE-Midas-Consultores/create-midas-front/issues/212))
+
+### 🐛 Bug Fixes
+
+* bump @stylistic/eslint-plugin in /src/dependencies/base ([#215](https://github.com/FE-Midas-Consultores/create-midas-front/issues/215)) ([03e9ef6](https://github.com/FE-Midas-Consultores/create-midas-front/commit/03e9ef6121c50548ce2088ba2b5991c4b36093f8))
+* bump @types/node in /src/dependencies/typescript ([#216](https://github.com/FE-Midas-Consultores/create-midas-front/issues/216)) ([04f6911](https://github.com/FE-Midas-Consultores/create-midas-front/commit/04f6911c113a022b0b955140e22a251136539163))
+
+
+### 🔄 Refactoring
+
+* update generator and cli ([#212](https://github.com/FE-Midas-Consultores/create-midas-front/issues/212)) ([4694a18](https://github.com/FE-Midas-Consultores/create-midas-front/commit/4694a1885dfdee391c3bf07d1ccf278c20bfab6d))
+
 ## [1.2.3](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v1.2.2...v1.2.3) (2025-05-05)
 ### :rocket: Bump Next to v14.2.28
 

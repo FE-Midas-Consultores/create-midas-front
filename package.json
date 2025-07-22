@@ -1,6 +1,6 @@
 {
   "name": "create-midas-front",
-  "version": "1.2.3",
+  "version": "2.0.0",
   "type": "module",
   "main": "build/index.js",
   "description": "Project initializer for React and Next.js apps.",
@@ -38,7 +38,7 @@
     "@commitlint/cli": "19.8.1",
     "@commitlint/config-conventional": "19.8.1",
     "@eslint/js": "9.31.0",
-    "@stylistic/eslint-plugin": "5.2.2",
+    "@stylistic/eslint-plugin": "5.2.1",
     "@types/node": "24.1.0",
     "@typescript-eslint/eslint-plugin": "8.38.0",
     "@typescript-eslint/parser": "8.38.0",
