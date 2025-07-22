@@ -30,7 +30,8 @@
     "link-cli": "rimraf ./build && pnpm build && npm uninstall -g create-midas-front && npm link",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "vitest run"
   },
   "devDependencies": {
     "@clack/prompts": "0.11.0",
@@ -46,13 +47,15 @@
     "eslint-plugin-check-file": "3.3.0",
     "eslint-plugin-import": "2.32.0",
     "eslint-plugin-unicorn": "60.0.0",
+    "execa": "9.6.0",
     "husky": "9.1.7",
     "picocolors": "1.1.1",
     "prettier": "3.6.2",
     "rimraf": "6.0.1",
     "tsup": "8.5.0",
     "typescript": "5.8.3",
-    "typescript-eslint": "8.38.0"
+    "typescript-eslint": "8.38.0",
+    "vitest": "3.2.4"
   },
   "dependencies": {
     "@commander-js/extra-typings": "14.0.0",
