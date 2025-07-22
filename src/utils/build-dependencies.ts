@@ -1,7 +1,7 @@
 import { readFile, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
-import { type EXEC_GENERATOR } from '../constants/generators.js'
+import { type Template } from '../constants/templates.js'
 import basePackageJson from '../dependencies/base/package.json' with { type: 'json' }
 import nextPackageJson from '../dependencies/next/package.json' with { type: 'json' }
 import reactPackageJson from '../dependencies/react/package.json' with { type: 'json' }
@@ -16,18 +16,23 @@ const packages = {
   vite: vitePackageJson,
 }
 
+const dependencies: Record<Template, (keyof typeof packages)[]> = {
+  next: ['base', 'react', 'next'],
+  'next-ts': ['base', 'react', 'next', 'ts'],
+  react: ['base', 'react', 'vite'],
+  'react-ts': ['base', 'react', 'vite', 'ts'],
+}
+
 /**
- * Merges and writes project dependencies into the `package.json` file
- * based on the selected generator and whether TypeScript is used.
+ * Merges and writes project dependencies into the `package.json`
+ * file based on the selected template.
  */
 export async function buildDependencies({
-  generator,
+  template: generator,
   projectName,
-  typescript = false,
 }: {
-  generator: keyof typeof EXEC_GENERATOR
+  template: Template
   projectName: string
-  typescript?: boolean
 }) {
   const projectPath = join(process.cwd(), projectName)
 
@@ -36,21 +41,22 @@ export async function buildDependencies({
     string
   >
 
+  const projectDeps = dependencies[generator].reduce<
+    Record<'dependencies' | 'devDependencies', Record<string, string>>
+  >(
+    (acc, dep) => {
+      Object.assign(acc.dependencies, packages[dep].dependencies)
+      Object.assign(acc.devDependencies, packages[dep].devDependencies)
+
+      return acc
+    },
+    { dependencies: {}, devDependencies: {} },
+  )
+
   const mergedPkgJson = {
     ...pkgJson,
-    dependencies: {
-      ...packages.base.dependencies,
-      ...packages.react.dependencies,
-      ...(generator === 'next' ? packages.next.dependencies : {}),
-      ...(typescript ? packages.ts.dependencies : {}),
-    },
-    devDependencies: {
-      ...packages.base.devDependencies,
-      ...packages.react.devDependencies,
-      ...(generator === 'next' ? packages.next.devDependencies : {}),
-      ...(typescript ? packages.ts.devDependencies : {}),
-      ...(generator === 'react' ? packages.vite.devDependencies : {}),
-    },
+    dependencies: { ...projectDeps.dependencies },
+    devDependencies: { ...projectDeps.devDependencies },
   }
 
   await writeFile(

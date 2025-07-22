@@ -22,6 +22,7 @@ export async function setupProject(
   const spinner = createSpinner()
 
   spinner.start('Setting up project 🚧')
+  await sleep()
 
   await replaceFiles(projectName)
 
