@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.2](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v2.0.1...v2.0.2) (2025-08-01)
+
+
+### 🐛 Bug Fixes
+
+* bump @eslint/js from 9.31.0 to 9.32.0 in /src/dependencies/base ([#221](https://github.com/FE-Midas-Consultores/create-midas-front/issues/221)) ([ce10f98](https://github.com/FE-Midas-Consultores/create-midas-front/commit/ce10f9883108930f400749a123d5650b2e423ce3))
+* bump @next/eslint-plugin-next in /src/dependencies/next ([#222](https://github.com/FE-Midas-Consultores/create-midas-front/issues/222)) ([b347080](https://github.com/FE-Midas-Consultores/create-midas-front/commit/b34708024fe7ddecb6ae0d58a24ebba70c11308d))
+* bump eslint from 9.31.0 to 9.32.0 in /src/dependencies/base ([#220](https://github.com/FE-Midas-Consultores/create-midas-front/issues/220)) ([0b56b34](https://github.com/FE-Midas-Consultores/create-midas-front/commit/0b56b345c42c4c2260bba99ea6c8adc94d4bd067))
+* bump next from 15.4.2 to 15.4.5 in /src/dependencies/next ([#223](https://github.com/FE-Midas-Consultores/create-midas-front/issues/223)) ([21d7619](https://github.com/FE-Midas-Consultores/create-midas-front/commit/21d7619607232ffdd32571dedb0728f97d958e1a))
+* bump react from 19.1.0 to 19.1.1 in /src/dependencies/react ([#224](https://github.com/FE-Midas-Consultores/create-midas-front/issues/224)) ([d1e38d8](https://github.com/FE-Midas-Consultores/create-midas-front/commit/d1e38d8863d42a3eaf3f9be6c952919716778d82))
+* bump vite from 7.0.5 to 7.0.6 in /src/dependencies/vite ([#225](https://github.com/FE-Midas-Consultores/create-midas-front/issues/225)) ([f31a81f](https://github.com/FE-Midas-Consultores/create-midas-front/commit/f31a81f5eb84f42c52f2b1480eba2ee0201f1853))
+
 ## [2.0.1](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v2.0.0...v2.0.1) (2025-07-22)
 
 
