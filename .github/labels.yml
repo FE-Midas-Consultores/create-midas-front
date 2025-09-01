@@ -31,6 +31,9 @@
 - name: 🩹 fix
   description: Fix applied in the PR
   color: F4D03F
+- name: 🧹 chore
+  description: Chore applied in the PR
+  color: 9BB3BD
 - name: ⚠️ breaking change
   description: Breaking change in the PR
   color: 734f02
