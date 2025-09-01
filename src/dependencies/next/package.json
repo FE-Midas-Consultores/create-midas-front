@@ -3,6 +3,6 @@
     "next": "15.4.7"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "15.4.5"
+    "@next/eslint-plugin-next": "15.5.2"
   }
 }
