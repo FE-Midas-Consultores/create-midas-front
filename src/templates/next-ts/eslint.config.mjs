@@ -210,6 +210,7 @@ export default [
         ],
         '@typescript-eslint/require-array-sort-compare': 'error',
         '@typescript-eslint/switch-exhaustiveness-check': 'error',
+        '@typescript-eslint/triple-slash-reference': 'off',
       },
     },
   ],
