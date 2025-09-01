@@ -1,5 +1,30 @@
 # Changelog
 
+## [2.1.0](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v2.0.2...v2.1.0) (2025-09-01)
+
+
+### ✨ New Features
+
+* update next templates ([#262](https://github.com/FE-Midas-Consultores/create-midas-front/issues/262)) ([d52fc02](https://github.com/FE-Midas-Consultores/create-midas-front/commit/d52fc02f91fe11d57977692aac51f6335e0b1937))
+
+
+### 🐛 Bug Fixes
+
+* bump @eslint/js from 9.32.0 to 9.34.0 in /src/dependencies/base ([#248](https://github.com/FE-Midas-Consultores/create-midas-front/issues/248)) ([0e73e6d](https://github.com/FE-Midas-Consultores/create-midas-front/commit/0e73e6dbe45e4d03f63501a6af1b84fbad34069c))
+* bump @next/eslint-plugin-next in /src/dependencies/next ([#238](https://github.com/FE-Midas-Consultores/create-midas-front/issues/238)) ([ac8de1d](https://github.com/FE-Midas-Consultores/create-midas-front/commit/ac8de1da9062a7c79555c34b32357c357b7b71ab))
+* bump @stylistic/eslint-plugin in /src/dependencies/base ([#243](https://github.com/FE-Midas-Consultores/create-midas-front/issues/243)) ([e2e4761](https://github.com/FE-Midas-Consultores/create-midas-front/commit/e2e4761026299d22d3efa48157f14e37cf551176))
+* bump @stylistic/eslint-plugin in /src/dependencies/base ([#259](https://github.com/FE-Midas-Consultores/create-midas-front/issues/259)) ([6098f32](https://github.com/FE-Midas-Consultores/create-midas-front/commit/6098f321a6b656086ef9436a2903c94ef3f844b6))
+* bump @types/node in /src/dependencies/typescript ([#245](https://github.com/FE-Midas-Consultores/create-midas-front/issues/245)) ([ed1f408](https://github.com/FE-Midas-Consultores/create-midas-front/commit/ed1f4084ec3ac3653d0f1e494a30b8f1812bc735))
+* bump @types/react in /src/dependencies/typescript ([#246](https://github.com/FE-Midas-Consultores/create-midas-front/issues/246)) ([f26e03c](https://github.com/FE-Midas-Consultores/create-midas-front/commit/f26e03cc459c62bbd7454e823913f8714c1a1474))
+* bump @types/react-dom in /src/dependencies/typescript ([#244](https://github.com/FE-Midas-Consultores/create-midas-front/issues/244)) ([8529113](https://github.com/FE-Midas-Consultores/create-midas-front/commit/8529113fac38b4eb8019718bf54eed8350916038))
+* bump @vitejs/plugin-react-swc in /src/dependencies/vite ([#256](https://github.com/FE-Midas-Consultores/create-midas-front/issues/256)) ([00a57c4](https://github.com/FE-Midas-Consultores/create-midas-front/commit/00a57c4441e9062a0440a61fe16c17cf3d7b924a))
+* bump eslint from 9.32.0 to 9.34.0 in /src/dependencies/base ([#240](https://github.com/FE-Midas-Consultores/create-midas-front/issues/240)) ([27857c8](https://github.com/FE-Midas-Consultores/create-midas-front/commit/27857c81d3e01854aa1d31b75643744f4b140c32))
+* bump next from 15.4.5 to 15.4.7 in /src/dependencies/next ([#236](https://github.com/FE-Midas-Consultores/create-midas-front/issues/236)) ([c174c26](https://github.com/FE-Midas-Consultores/create-midas-front/commit/c174c2625448b04a04801a3b825767191440049d))
+* bump next from 15.4.7 to 15.5.2 in /src/dependencies/next ([#241](https://github.com/FE-Midas-Consultores/create-midas-front/issues/241)) ([e1aecda](https://github.com/FE-Midas-Consultores/create-midas-front/commit/e1aecda14791a298f4b3051fc301a3a01b91f86a))
+* bump typescript-eslint in /src/dependencies/typescript ([#247](https://github.com/FE-Midas-Consultores/create-midas-front/issues/247)) ([d4d397a](https://github.com/FE-Midas-Consultores/create-midas-front/commit/d4d397a1f734c0ff778c986b36dcc36a9cfa7332))
+* bump vite from 7.0.6 to 7.1.3 in /src/dependencies/vite ([#249](https://github.com/FE-Midas-Consultores/create-midas-front/issues/249)) ([0952862](https://github.com/FE-Midas-Consultores/create-midas-front/commit/0952862933cd2adaa7c1c2dd05c833541a62e363))
+* bump vite from 7.1.3 to 7.1.4 in /src/dependencies/vite ([#260](https://github.com/FE-Midas-Consultores/create-midas-front/issues/260)) ([3f33398](https://github.com/FE-Midas-Consultores/create-midas-front/commit/3f33398d30094e7fa5800c63990e098c5cf0033d))
+
 ## [2.0.2](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v2.0.1...v2.0.2) (2025-08-05)
 
 
