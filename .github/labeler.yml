@@ -49,3 +49,17 @@
           - .github/labeler.yml
           - .github/labels.yml
           - .github/settings.yml
+
+🧪 tests:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.test.ts'
+
+🚀 feature:
+  - head-branch: ['^feat', '^feature']
+
+🩹 fix:
+  - head-branch: ['^fix', '^hotfix']
+
+🧹 chore:
+  - head-branch: ['^chore']
