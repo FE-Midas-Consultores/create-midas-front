@@ -35,7 +35,7 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
       - run: pnpm build
         if: ${{ steps.release.outputs.release_created }}
-      - uses: JS-DevTools/npm-publish@v3
+      - uses: JS-DevTools/npm-publish@v4
         with:
           token: ${{ secrets.NPM_TOKEN }}
         if: ${{ steps.release.outputs.release_created }}
