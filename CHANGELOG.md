@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.1.1](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v2.1.0...v2.1.1) (2025-10-30)
+
+
+### 🐛 Bug Fixes
+
+* bump @eslint/js from 9.34.0 to 9.36.0 in /src/dependencies/base ([#280](https://github.com/FE-Midas-Consultores/create-midas-front/issues/280)) ([75e71a2](https://github.com/FE-Midas-Consultores/create-midas-front/commit/75e71a23ad300e527ff85e6b5b2db3606dc8c4dd))
+* bump @stylistic/eslint-plugin in /src/dependencies/base ([#278](https://github.com/FE-Midas-Consultores/create-midas-front/issues/278)) ([d51b9f7](https://github.com/FE-Midas-Consultores/create-midas-front/commit/d51b9f7bc5bd98c168c5ef7c0bbc83daf981634b))
+* bump @types/react in /src/dependencies/typescript ([#281](https://github.com/FE-Midas-Consultores/create-midas-front/issues/281)) ([884df9f](https://github.com/FE-Midas-Consultores/create-midas-front/commit/884df9f4f18831398c2aa539917a644ef1af9145))
+* bump eslint from 9.34.0 to 9.36.0 in /src/dependencies/base ([#279](https://github.com/FE-Midas-Consultores/create-midas-front/issues/279)) ([874c77b](https://github.com/FE-Midas-Consultores/create-midas-front/commit/874c77b275c1fe85ed94b4d5a51713421fa9b282))
+* bump globals from 16.3.0 to 16.4.0 in /src/dependencies/base ([#276](https://github.com/FE-Midas-Consultores/create-midas-front/issues/276)) ([7c18cb4](https://github.com/FE-Midas-Consultores/create-midas-front/commit/7c18cb4b0dd7cd2b022fd88d4cc137f3cabbe542))
+* bump typescript-eslint in /src/dependencies/typescript ([#282](https://github.com/FE-Midas-Consultores/create-midas-front/issues/282)) ([e43db4b](https://github.com/FE-Midas-Consultores/create-midas-front/commit/e43db4b6c2d90e752723499acbfcf0a76f817334))
+* bump vite from 7.1.4 to 7.1.5 in /src/dependencies/vite ([#264](https://github.com/FE-Midas-Consultores/create-midas-front/issues/264)) ([c2f0fb8](https://github.com/FE-Midas-Consultores/create-midas-front/commit/c2f0fb88a87b7b75b4f5663a3dc97a37890065eb))
+* bump vite from 7.1.5 to 7.1.11 in /src/dependencies/vite ([#283](https://github.com/FE-Midas-Consultores/create-midas-front/issues/283)) ([8ae36ed](https://github.com/FE-Midas-Consultores/create-midas-front/commit/8ae36eda25c7f876729da5cd495f52a53e7f53c0))
+
 ## [2.1.0](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v2.0.2...v2.1.0) (2025-09-01)
 
 
