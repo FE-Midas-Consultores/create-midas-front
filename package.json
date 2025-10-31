@@ -6,7 +6,7 @@
   "description": "Project initializer for React and Next.js apps.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Midas-Consultores/create-midas-front"
+    "url": "git+https://github.com/Midas-Consultores/create-midas-front.git"
   },
   "keywords": [
     "commitlint",
