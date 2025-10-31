@@ -1,5 +1,6 @@
 import eslint from '@eslint/js'
-import eslintConfigPrettier from 'eslint-config-prettier'
+import { defineConfig, globalIgnores } from 'eslint/config'
+import eslintConfigPrettier from 'eslint-config-prettier/flat'
 import checkFilePlugin from 'eslint-plugin-check-file'
 import importOrderPlugin from 'eslint-plugin-import'
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
@@ -9,19 +10,17 @@ import reactRefreshPlugin from 'eslint-plugin-react-refresh'
 import unicornPlugin from 'eslint-plugin-unicorn'
 import globals from 'globals'
 
-export default [
-  {
-    ignores: [
-      'node_modules',
-      'dist',
-      // Shadcn UI components
-      'src/components/ui',
-    ],
-  },
+export default defineConfig([
+  globalIgnores([
+    'node_modules',
+    'dist',
+    // Shadcn UI components
+    'src/components/ui',
+  ]),
   // Vanilla ESLint
   {
+    extends: [eslint.configs.recommended],
     rules: {
-      ...eslint.configs.recommended.rules,
       eqeqeq: ['error', 'always', { null: 'ignore' }],
       'no-await-in-loop': 'error',
       'no-console': 'error',
@@ -95,21 +94,18 @@ export default [
   // React
   {
     files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
+    extends: [
+      reactRefreshPlugin.configs.vite,
+      reactPlugin.configs.flat.recommended,
+      reactHooksPlugin.configs.flat['recommended-latest'],
+      jsxA11yPlugin.flatConfigs.recommended,
+      reactPlugin.configs.flat['jsx-runtime'],
+    ],
     languageOptions: {
       globals: { ...globals.browser },
       parserOptions: { ecmaFeatures: { jsx: true } },
     },
-    plugins: {
-      react: reactPlugin,
-      'react-hooks': reactHooksPlugin,
-      'react-refresh': reactRefreshPlugin,
-      'jsx-a11y': jsxA11yPlugin,
-    },
     rules: {
-      ...reactPlugin.configs.recommended.rules,
-      ...reactHooksPlugin.configs.recommended.rules,
-      ...jsxA11yPlugin.configs.recommended.rules,
-      ...reactPlugin.configs['jsx-runtime'].rules,
       'react/function-component-definition': 'warn',
       'react/hook-use-state': 'error',
       'react/jsx-boolean-value': 'warn',
@@ -123,7 +119,6 @@ export default [
       'react/no-unstable-nested-components': 'error',
       'react/prop-types': 'off',
       'react/self-closing-comp': 'warn',
-      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     },
     settings: { react: { version: 'detect' } },
   },
@@ -156,4 +151,4 @@ export default [
   },
   // Prettier
   eslintConfigPrettier,
-]
+])
