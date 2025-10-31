@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v2.2.0...v2.2.1) (2025-10-31)
+
+
+### 🐛 Bug Fixes
+
+* repository url ([#287](https://github.com/FE-Midas-Consultores/create-midas-front/issues/287)) ([ecad763](https://github.com/FE-Midas-Consultores/create-midas-front/commit/ecad7638d507b44afbf03004378da8bc84411607))
+
 ## [2.2.0](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v2.1.1...v2.2.0) (2025-10-31)
 
 
