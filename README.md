@@ -73,7 +73,3 @@ When new commits are pushed to the main branch, release-please will:
 - Keep the CHANGELOG and release PR up to date if new commits continue to be pushed to `main` while the PR remains open
 
 Once the release PR is merged, a new release is published automatically on npm, including the CHANGELOG and updated version.
-
-> [!NOTE]
-> The repository must have a NPM token configured to automatically publish new releases.\
-> Repository Settings > Secrets and variables > Actions
