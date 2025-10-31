@@ -1,5 +1,6 @@
 import eslint from '@eslint/js'
-import eslintConfigPrettier from 'eslint-config-prettier'
+import { defineConfig, globalIgnores } from 'eslint/config'
+import eslintConfigPrettier from 'eslint-config-prettier/flat'
 import checkFilePlugin from 'eslint-plugin-check-file'
 import importOrderPlugin from 'eslint-plugin-import'
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
@@ -10,19 +11,17 @@ import unicornPlugin from 'eslint-plugin-unicorn'
 import globals from 'globals'
 import tsEslint from 'typescript-eslint'
 
-export default [
-  {
-    ignores: [
-      'node_modules',
-      'dist',
-      // Shadcn UI components
-      'src/components/ui',
-    ],
-  },
+export default defineConfig([
+  globalIgnores([
+    'node_modules',
+    'dist',
+    // Shadcn UI components
+    'src/components/ui',
+  ]),
   // Vanilla ESLint
   {
+    extends: [eslint.configs.recommended],
     rules: {
-      ...eslint.configs.recommended.rules,
       eqeqeq: ['error', 'always', { null: 'ignore' }],
       'no-await-in-loop': 'error',
       'no-console': 'error',
@@ -88,21 +87,18 @@ export default [
   // React
   {
     files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
+    extends: [
+      reactRefreshPlugin.configs.vite,
+      reactPlugin.configs.flat.recommended,
+      reactHooksPlugin.configs.flat['recommended-latest'],
+      jsxA11yPlugin.flatConfigs.recommended,
+      reactPlugin.configs.flat['jsx-runtime'],
+    ],
     languageOptions: {
       globals: { ...globals.browser },
       parserOptions: { ecmaFeatures: { jsx: true } },
     },
-    plugins: {
-      react: reactPlugin,
-      'react-hooks': reactHooksPlugin,
-      'react-refresh': reactRefreshPlugin,
-      'jsx-a11y': jsxA11yPlugin,
-    },
     rules: {
-      ...reactPlugin.configs.recommended.rules,
-      ...reactHooksPlugin.configs.recommended.rules,
-      ...jsxA11yPlugin.configs.recommended.rules,
-      ...reactPlugin.configs['jsx-runtime'].rules,
       'react/function-component-definition': 'warn',
       'react/hook-use-state': 'error',
       'react/jsx-boolean-value': 'warn',
@@ -116,7 +112,6 @@ export default [
       'react/no-unstable-nested-components': 'error',
       'react/prop-types': 'off',
       'react/self-closing-comp': 'warn',
-      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     },
     settings: { react: { version: 'detect' } },
   },
@@ -139,66 +134,57 @@ export default [
     },
   },
   // TypeScript
-  ...[
-    ...tsEslint.configs.strictTypeChecked,
-    ...tsEslint.configs.stylisticTypeChecked,
-    {
-      languageOptions: {
-        parserOptions: {
-          project: ['./tsconfig.app.json', './tsconfig.node.json'],
-          tsconfigRootDir: import.meta.dirname,
-        },
-      },
-      rules: {
-        '@typescript-eslint/consistent-type-exports': [
-          'warn',
-          { fixMixedExportsWithInlineTypeSpecifier: true },
-        ],
-        '@typescript-eslint/consistent-type-imports': ['warn', { fixStyle: 'inline-type-imports' }],
-        '@typescript-eslint/default-param-last': 'error',
-        '@typescript-eslint/member-ordering': [
-          'error',
-          { interfaces: { order: 'natural-case-insensitive' } },
-        ],
-        '@typescript-eslint/method-signature-style': 'warn',
-        '@typescript-eslint/naming-convention': [
-          'error',
-          { format: ['PascalCase'], selector: ['typeLike', 'enumMember'] },
-          {
-            custom: { match: false, regex: '^(Interface|Props|State)$' },
-            format: ['PascalCase'],
-            selector: 'interface',
-          },
-        ],
-        '@typescript-eslint/no-confusing-void-expression': [
-          'error',
-          { ignoreArrowShorthand: true },
-        ],
-        '@typescript-eslint/no-loop-func': 'error',
-        '@typescript-eslint/no-redundant-type-constituents': 'warn',
-        '@typescript-eslint/no-unnecessary-qualifier': 'warn',
-        '@typescript-eslint/no-unused-vars': [
-          'error',
-          {
-            args: 'all',
-            argsIgnorePattern: '^_',
-            caughtErrors: 'all',
-            caughtErrorsIgnorePattern: '^_',
-            destructuredArrayIgnorePattern: '^_',
-            varsIgnorePattern: '^_',
-            ignoreRestSiblings: true,
-          },
-        ],
-        '@typescript-eslint/prefer-nullish-coalescing': [
-          'error',
-          { ignorePrimitives: { bigint: true, boolean: true, number: true, string: true } },
-        ],
-        '@typescript-eslint/require-array-sort-compare': 'error',
-        '@typescript-eslint/switch-exhaustiveness-check': 'error',
-        '@typescript-eslint/triple-slash-reference': 'off',
-      },
+  {
+    extends: [tsEslint.configs.strictTypeChecked, tsEslint.configs.stylisticTypeChecked],
+    languageOptions: {
+      parserOptions: { projectService: true },
     },
-  ],
+    rules: {
+      '@typescript-eslint/consistent-type-exports': [
+        'warn',
+        { fixMixedExportsWithInlineTypeSpecifier: true },
+      ],
+      '@typescript-eslint/consistent-type-imports': ['warn', { fixStyle: 'inline-type-imports' }],
+      '@typescript-eslint/default-param-last': 'error',
+      '@typescript-eslint/member-ordering': [
+        'error',
+        { interfaces: { order: 'natural-case-insensitive' } },
+      ],
+      '@typescript-eslint/method-signature-style': 'warn',
+      '@typescript-eslint/naming-convention': [
+        'error',
+        { format: ['PascalCase'], selector: ['typeLike', 'enumMember'] },
+        {
+          custom: { match: false, regex: '^(Interface|Props|State)$' },
+          format: ['PascalCase'],
+          selector: 'interface',
+        },
+      ],
+      '@typescript-eslint/no-confusing-void-expression': ['error', { ignoreArrowShorthand: true }],
+      '@typescript-eslint/no-loop-func': 'error',
+      '@typescript-eslint/no-redundant-type-constituents': 'warn',
+      '@typescript-eslint/no-unnecessary-qualifier': 'warn',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          args: 'all',
+          argsIgnorePattern: '^_',
+          caughtErrors: 'all',
+          caughtErrorsIgnorePattern: '^_',
+          destructuredArrayIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          ignoreRestSiblings: true,
+        },
+      ],
+      '@typescript-eslint/prefer-nullish-coalescing': [
+        'error',
+        { ignorePrimitives: { bigint: true, boolean: true, number: true, string: true } },
+      ],
+      '@typescript-eslint/require-array-sort-compare': 'error',
+      '@typescript-eslint/switch-exhaustiveness-check': 'error',
+      '@typescript-eslint/triple-slash-reference': 'off',
+    },
+  },
   // Disable type checked in .js files
   {
     files: ['**/*.{js,cjs,mjs}'],
@@ -215,4 +201,4 @@ export default [
   },
   // Prettier
   eslintConfigPrettier,
-]
+])

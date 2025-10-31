@@ -1,8 +1,8 @@
 {
   "dependencies": {},
   "devDependencies": {
-    "@vitejs/plugin-react-swc": "4.0.1",
-    "eslint-plugin-react-refresh": "0.4.20",
-    "vite": "7.1.11"
+    "@vitejs/plugin-react": "5.1.0",
+    "eslint-plugin-react-refresh": "0.4.24",
+    "vite": "7.1.12"
   }
 }
