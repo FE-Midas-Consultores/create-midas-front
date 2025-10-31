@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v2.1.1...v2.2.0) (2025-10-31)
+
+
+### ✨ New Features
+
+* **templates:** update react and next to the latest versions ([#285](https://github.com/FE-Midas-Consultores/create-midas-front/issues/285)) ([d059fca](https://github.com/FE-Midas-Consultores/create-midas-front/commit/d059fca565523504857ae8d40c0f8ef66b709ab2))
+
 ## [2.1.1](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v2.1.0...v2.1.1) (2025-10-30)
 
 
