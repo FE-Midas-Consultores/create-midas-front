@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.2.2](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v2.2.1...v2.2.2) (2025-11-01)
+
+
+### 🐛 Bug Fixes
+
+* bump @eslint/js from 9.38.0 to 9.39.0 in /src/dependencies/base ([#294](https://github.com/FE-Midas-Consultores/create-midas-front/issues/294)) ([89aa145](https://github.com/FE-Midas-Consultores/create-midas-front/commit/89aa145249b002c6612fb763747ccb0b12fd5b62))
+* bump eslint from 9.38.0 to 9.39.0 in /src/dependencies/base ([#293](https://github.com/FE-Midas-Consultores/create-midas-front/issues/293)) ([578e3fe](https://github.com/FE-Midas-Consultores/create-midas-front/commit/578e3fe8d97a2f6ac1dc27b11920a6cc6de6f1b2))
+
 ## [2.2.1](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v2.2.0...v2.2.1) (2025-10-31)
 
 
