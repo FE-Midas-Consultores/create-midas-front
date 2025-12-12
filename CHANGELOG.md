@@ -1,5 +1,24 @@
 # Changelog
 
+## [2.2.2](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v2.2.1...v2.2.2) (2025-12-12)
+
+
+### 🐛 Bug Fixes
+
+* bump @eslint/js from 9.38.0 to 9.39.0 in /src/dependencies/base ([#294](https://github.com/FE-Midas-Consultores/create-midas-front/issues/294)) ([89aa145](https://github.com/FE-Midas-Consultores/create-midas-front/commit/89aa145249b002c6612fb763747ccb0b12fd5b62))
+* bump @eslint/js from 9.39.0 to 9.39.1 in /src/dependencies/base ([#300](https://github.com/FE-Midas-Consultores/create-midas-front/issues/300)) ([363be4d](https://github.com/FE-Midas-Consultores/create-midas-front/commit/363be4d2a1d7f336b8b75f2b50e2042f75e8edda))
+* bump @stylistic/eslint-plugin in /src/dependencies/base ([#297](https://github.com/FE-Midas-Consultores/create-midas-front/issues/297)) ([40c09fc](https://github.com/FE-Midas-Consultores/create-midas-front/commit/40c09fc3e88bc822b99b5d15a5ad9562273b8b27))
+* bump @types/react in /src/dependencies/typescript ([#302](https://github.com/FE-Midas-Consultores/create-midas-front/issues/302)) ([25fe347](https://github.com/FE-Midas-Consultores/create-midas-front/commit/25fe347c6232febae1b78c52280a19af64e92b1a))
+* bump @types/react-dom in /src/dependencies/typescript ([#304](https://github.com/FE-Midas-Consultores/create-midas-front/issues/304)) ([12f8b88](https://github.com/FE-Midas-Consultores/create-midas-front/commit/12f8b88679053cb18c2c4909b04e255d383a733f))
+* bump eslint from 9.38.0 to 9.39.0 in /src/dependencies/base ([#293](https://github.com/FE-Midas-Consultores/create-midas-front/issues/293)) ([578e3fe](https://github.com/FE-Midas-Consultores/create-midas-front/commit/578e3fe8d97a2f6ac1dc27b11920a6cc6de6f1b2))
+* bump eslint-plugin-check-file in /src/dependencies/base ([#299](https://github.com/FE-Midas-Consultores/create-midas-front/issues/299)) ([3022352](https://github.com/FE-Midas-Consultores/create-midas-front/commit/302235213dfb37ebe1792a875d05973a9169d233))
+* bump lint-staged from 16.2.6 to 16.2.7 in /src/dependencies/base ([#301](https://github.com/FE-Midas-Consultores/create-midas-front/issues/301)) ([6fad9cc](https://github.com/FE-Midas-Consultores/create-midas-front/commit/6fad9cc3a1697826ee445bc68d875299081c4719))
+* bump next from 16.0.1 to 16.0.7 in /src/dependencies/next ([#314](https://github.com/FE-Midas-Consultores/create-midas-front/issues/314)) ([14e8407](https://github.com/FE-Midas-Consultores/create-midas-front/commit/14e840781a370fd3ddbb6f08ecb7017f42234607))
+* bump next from 16.0.7 to 16.0.9 in /src/dependencies/next ([#315](https://github.com/FE-Midas-Consultores/create-midas-front/issues/315)) ([795ae91](https://github.com/FE-Midas-Consultores/create-midas-front/commit/795ae91d4b74aee2862152692c69c83500e4c96c))
+* bump next from 16.0.9 to 16.0.10 in /src/dependencies/next ([#316](https://github.com/FE-Midas-Consultores/create-midas-front/issues/316)) ([c79be99](https://github.com/FE-Midas-Consultores/create-midas-front/commit/c79be994c461ef2195b69d242485a0142b82059f))
+* bump prettier from 3.6.2 to 3.7.3 in /src/dependencies/base ([#298](https://github.com/FE-Midas-Consultores/create-midas-front/issues/298)) ([7605542](https://github.com/FE-Midas-Consultores/create-midas-front/commit/76055422a717050c915004c9e9f5d3c6cffb9abb))
+* bump typescript-eslint in /src/dependencies/typescript ([#303](https://github.com/FE-Midas-Consultores/create-midas-front/issues/303)) ([0241cd3](https://github.com/FE-Midas-Consultores/create-midas-front/commit/0241cd3209d87e319ce18f14ced615fb69e99f27))
+
 ## [2.2.1](https://github.com/FE-Midas-Consultores/create-midas-front/compare/v2.2.0...v2.2.1) (2025-10-31)
 
 
