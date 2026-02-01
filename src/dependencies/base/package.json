@@ -2,7 +2,7 @@
   "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "20.2.0",
-    "@commitlint/config-conventional": "20.2.0",
+    "@commitlint/config-conventional": "20.4.0",
     "@eslint/js": "9.39.2",
     "@stylistic/eslint-plugin": "5.6.1",
     "eslint": "9.39.2",
